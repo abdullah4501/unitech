@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 export default function Nav({ setMobileToggle }) {
   return (
     <ul className="cs_nav_list fw-medium">
-      <li className="menu-item-has-children">
+      <li>
         <Link to="/">Home</Link>
-        <DropDown>
+        {/* <DropDown>
           <ul>
             <li>
               <Link to="/" onClick={() => setMobileToggle(false)}>
@@ -24,9 +24,14 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>            
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li>
-      <li className="menu-item-has-children">
+      <li>
+        <Link to="/about" onClick={() => setMobileToggle(false)}>
+          About Us
+        </Link>
+      </li>
+      {/* <li className="menu-item-has-children">
         <Link to="#">Pages</Link>
         <DropDown>
           <ul>
@@ -62,8 +67,7 @@ export default function Nav({ setMobileToggle }) {
             </li>                         
           </ul>
         </DropDown>
-      </li>  
-
+      </li>   */}
       <li className="menu-item-has-children">
         <Link to="/service" onClick={() => setMobileToggle(false)}>
           Services
@@ -71,20 +75,39 @@ export default function Nav({ setMobileToggle }) {
         <DropDown>
           <ul>
             <li>
-              <Link to="/service" onClick={() => setMobileToggle(false)}>
-                Services
+              <Link to="/service/service-details" onClick={() => setMobileToggle(false)}>
+                QA & Test Automation
               </Link>
             </li>
             <li>
               <Link to="/service/service-details" onClick={() => setMobileToggle(false)}>
-                Service Details
+                Web Design & Development
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/service-details" onClick={() => setMobileToggle(false)}>
+                UI/UX Designing
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/service-details" onClick={() => setMobileToggle(false)}>
+                Mobile Applications
+              </Link>
+            </li>
+            <li>
+              <Link to="/service/service-details" onClick={() => setMobileToggle(false)}>
+                DevOps
               </Link>
             </li>
           </ul>
         </DropDown>
       </li>
-
-      <li className="menu-item-has-children">
+      <li>
+        <Link to="/project" onClick={() => setMobileToggle(false)}>
+        Projects
+        </Link>
+      </li>
+      {/* <li className="menu-item-has-children">
         <Link to="/project" onClick={() => setMobileToggle(false)}>
         Project
         </Link>
@@ -102,35 +125,7 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li> 
-      
-      <li className="menu-item-has-children">
-        <Link to="/blog" onClick={() => setMobileToggle(false)}>
-          Blog
-        </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link to="/blog" onClick={() => setMobileToggle(false)}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/blog-sidebar" onClick={() => setMobileToggle(false)}>
-                Blog With Sidebar
-              </Link>
-            </li>                         
-            <li>
-              <Link
-                to="/blog/blog-details"
-                onClick={() => setMobileToggle(false)}
-              >
-                Blog Details
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-      </li>
+      </li>  */}
       <li>
         <Link to="/contact" onClick={() => setMobileToggle(false)}>
           Contact

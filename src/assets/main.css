@@ -6516,7 +6516,7 @@ label {
   position: relative;
 }
 .cs_site_header.cs_style_1 .cs_main_header_in {
-  height: 100px;
+  height: 120px;
 }
 .cs_site_header.cs_style_1 .cs_top_header_in {
   height: 45px;
@@ -6840,13 +6840,13 @@ label {
   background-color: #2b00a5;
 }
 .header_sticky_style1.cs-gescout_sticky{
-  background-color: #6a47ed;
+  background-color: #fff;
 }
 .header_sticky_style1.cs_site_header.header_style_2.cs_style_1 .container::before {
-  background-color: #6a47ed;
+  background-color: #fff;
 }
 .header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{
-  color: #fff;
+  color: #032858;
 }
 .cs_site_header.header_style_2.cs_style_1 .cs_main_header .container{
   max-width: 1314px;
@@ -6991,7 +6991,7 @@ label {
     position: relative;
  }
   .cs_site_header.cs_style_1 .cs_main_header_in {
-    height: 80px;
+    height: 100px;
  }
   .cs_site_header .current-menu-item > a:before {
     display: none;
@@ -7164,9 +7164,7 @@ label {
   align-items: center;
   gap: 10px 40px;
 }
-.cs_site_header.header_style_2.cs_style_1 .cs_main_header_in {
-  height: 90px;
-}
+
 .cs_site_header.header_style_2.cs_style_1 .container::before {
   border-radius: 0;
   background-color: #fff;
@@ -7187,9 +7185,7 @@ label {
 .cs_site_header_spacing_140 {
   height: 100px;
 }
-.cs_site_header.header_style_2.cs_style_1 .cs_main_header_in {
-  height: 90px;
-}
+
 
 .cs_site_header_spacing_140 {
   height: 90px;
@@ -7299,4 +7295,9 @@ label {
 }
 .agenko-accordion-item.active .accordion-content{
   display: block;
+}
+
+/* Additional  */
+.logo-brand img{
+  width: 180px;
 }
